@@ -35,7 +35,7 @@ const About = () => {
             </p>
             <p>
               {" "}
-              <span>Email:</span> joao_pedro_12345@hotmail.com
+              <span>Email:</span> jpedro058.pf@gmail.com
             </p>
           </div>
           <div className="skills">

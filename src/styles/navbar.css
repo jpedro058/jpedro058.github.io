@@ -44,7 +44,10 @@ nav ul{
 nav li{
     font-size: 1.3rem;
     font-weight: 700;
-    
+}
+
+nav :nth-last-child(1){
+  padding-right: 1rem;
 }
 
 nav li a{
@@ -62,7 +65,7 @@ nav li a{
     position: absolute;
     width: 3.5rem;
     height: 2px;
-    top: 3rem;
+    top: 2rem;
     left: 0;
     background-color: rgb(138, 138, 138);
     visibility: hidden;
@@ -74,8 +77,8 @@ nav li a{
     position: absolute;
     width: 3.4rem;
     height: 2px;
-    top: 3rem;
-    left: 6.5rem;
+    top: 2rem;
+    left: 7.4rem;
     background-color: rgb(138, 138, 138);
     visibility: hidden;
     transform: scaleX(0);
@@ -86,8 +89,8 @@ nav li a{
     position: absolute;
     width: 4.2rem;
     height: 2px;
-    top: 3rem;
-    left: 13rem;
+    top: 2rem;
+    left: 15rem;
     background-color: rgb(138, 138, 138);
     visibility: hidden;
     transform: scaleX(0);
@@ -123,6 +126,8 @@ header .nav-btn{
     header .nav-btn{
         visibility: visible;
         opacity: 1;
+        position: absolute;
+        top: 1rem;
     }
 
     header nav{
@@ -180,38 +185,20 @@ header .nav-btn{
     .link1::after, .link2::before, .link3::before {
         content: "";
         position: absolute;
-        width: 4.5rem;
-        height: 2px;
-        top: 43%;
-        left: 46.5%;
-        background-color: rgb(138, 138, 138);
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out 0s;
+        top: -10rem;
       }
 
     .link2::before, .link3::before {
         position: absolute;
-        width: 3.4rem;
-        height: 2px;
-        top: 3rem;
+        top: -103rem;
         left: 6.5rem;
-        background-color: rgb(138, 138, 138);
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out 0s;
+     
       }
       
       .link3::before{
         position: absolute;
-        width: 4.2rem;
-        height: 2px;
-        top: 3rem;
-        left: 13rem;
-        background-color: rgb(138, 138, 138);
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out 0s;
+        top: -100%;
+        
       }
       .link1:hover::after, .link2:hover::before, .link3:hover::before {
         visibility: visible;

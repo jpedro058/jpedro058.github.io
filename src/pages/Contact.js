@@ -57,7 +57,12 @@ const Contact = () => {
           <div className="inputs-top">
             <div className="Name">
               <h4>Name</h4>
-              <input type="text" name="user_name" placeholder="John Lennon" />
+              <input
+                type="text"
+                name="user_name"
+                placeholder="John Lennon"
+                required
+              />
             </div>
             <div className="Email">
               <h4>Email</h4>
@@ -65,6 +70,7 @@ const Contact = () => {
                 type="email"
                 name="user_email"
                 placeholder="xxx@gmail.com"
+                required
               />
             </div>
           </div>
@@ -72,7 +78,12 @@ const Contact = () => {
           <div className="inputs-bottom">
             <div className="Message">
               <h4>Message</h4>
-              <textarea type="text" name="message" placeholder="Hey..." />
+              <textarea
+                type="text"
+                name="message"
+                placeholder="Hey..."
+                required
+              />
             </div>
           </div>
           <div className="botao">

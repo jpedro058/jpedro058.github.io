@@ -41,6 +41,14 @@ const Contact = () => {
       setActive(false);
     }, 3000);
   };
+
+  const [message, setMessage] = useState("Initial value");
+
+  // 👇️ called every time input's value changes
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+  };
+
   return (
     <div className="Contact" id="contact">
       <div className="contact-container-left">
@@ -61,6 +69,8 @@ const Contact = () => {
                 type="text"
                 name="user_name"
                 placeholder="John Lennon"
+                onChange={handleChange}
+                value={message}
                 required
               />
             </div>
@@ -70,6 +80,8 @@ const Contact = () => {
                 type="email"
                 name="user_email"
                 placeholder="xxx@gmail.com"
+                onChange={handleChange}
+                value={message}
                 required
               />
             </div>

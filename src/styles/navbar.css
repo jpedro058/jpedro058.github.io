@@ -10,6 +10,10 @@ header {
   border-bottom: 1px solid gray;
 }
 
+.header.down {
+  top: -2rem;
+}
+
 nav {
   position: absolute;
   right: 0;

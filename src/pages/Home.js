@@ -9,7 +9,7 @@ import "../styles/global.css";
 /* import Typewriter from "typewriter-effect"; */
 
 const Home = () => (
-  <div className="home-page">
+  <div className="home-page" id="Home">
     <Navbar />
     <div className="inside-page">
       <div className="home-page-title">

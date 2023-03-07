@@ -23,17 +23,17 @@ const Navbar = () => {
         <div className="links">
           <ul className="nav-links">
             <li>
-              <Link to="/" className="link1">
+              <Link to="#home" className="link1" onClick={toggleNav}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="#about" className="link2">
+              <Link to="#about" className="link2" onClick={toggleNav}>
                 About
               </Link>
             </li>
             <li>
-              <Link to="#contact" className="link3">
+              <Link to="#contact" className="link3" onClick={toggleNav}>
                 Contact
               </Link>
             </li>

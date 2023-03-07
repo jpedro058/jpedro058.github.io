@@ -9,7 +9,7 @@ import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -35,6 +35,8 @@ const Contact = () => {
   const [isActive, setActive] = useState(false);
 
   const handleClick = () => {
+    console.log(ref.current.value);
+
     setActive(!isActive);
 
     setTimeout(() => {
@@ -42,12 +44,7 @@ const Contact = () => {
     }, 3000);
   };
 
-  const [message, setMessage] = useState("Initial value");
-
-  // 👇️ called every time input's value changes
-  const handleChange = (event) => {
-    setMessage(event.target.value);
-  };
+  const ref = useRef(null);
 
   return (
     <div className="Contact" id="contact">
@@ -65,14 +62,7 @@ const Contact = () => {
           <div className="inputs-top">
             <div className="Name">
               <h4>Name</h4>
-              <input
-                type="text"
-                name="user_name"
-                placeholder="John Lennon"
-                onChange={handleChange}
-                value={message}
-                required
-              />
+              <input type="text" placeholder="xxx@gmail.com" />
             </div>
             <div className="Email">
               <h4>Email</h4>
@@ -80,9 +70,6 @@ const Contact = () => {
                 type="email"
                 name="user_email"
                 placeholder="xxx@gmail.com"
-                onChange={handleChange}
-                value={message}
-                required
               />
             </div>
           </div>

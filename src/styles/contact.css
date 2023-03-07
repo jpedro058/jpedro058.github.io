@@ -120,7 +120,7 @@ input {
   border: none;
   border-bottom: 2px solid white;
   background-color: transparent;
-  height: 2rem;
+  height: 3rem;
   font-size: 0.8rem;
 }
 
@@ -242,6 +242,7 @@ textarea {
     align-items: flex-start;
     width: 70%;
     padding-left: 2rem;
+    height: fit-content;
   }
 
   .contact-container-right {
@@ -284,6 +285,7 @@ textarea {
     align-items: flex-start;
     width: 70%;
     padding-left: 2rem;
+    height: fit-content;
   }
 
   .inputs-top {
@@ -359,6 +361,10 @@ textarea {
     flex: 0 100%;
     width: 100%;
     color: white;
+  }
+
+  .contact-container-left {
+    height: 10vh !important;
   }
 
   .Content h2 {

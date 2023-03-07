@@ -276,11 +276,34 @@ textarea {
     height: 90vh !important;
   }
 
+  .Contact .contact-container-left {
+    position: absolute;
+    top: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    padding-left: 2rem;
+  }
+
   .inputs-top {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+  }
+
+  .social {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  .social img {
+    width: 2rem !important;
+    transition: 0.2s ease-out;
+    padding: 0rem;
+    background-color: transparent;
   }
 
   .Name {
@@ -296,12 +319,61 @@ textarea {
     width: 100%;
     padding: 1rem;
   }
+
+  form h4 {
+    font-size: 2rem !important;
+  }
+
+  button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 7rem;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.3s ease-out;
+  }
+
+  .Message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Contact {
+    position: relative;
+    flex-direction: column;
+    height: 100vh !important;
+  }
+
+  .Contact .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 100%;
+    width: 100%;
+    color: white;
+  }
+
+  .Content h2 {
+    font-size: 2.5rem;
+  }
+
+  .Contact p {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 375px) {
   .Contact {
     position: relative;
     flex-direction: column;
-    height: 120vh !important;
+    height: 150vh !important;
   }
 }

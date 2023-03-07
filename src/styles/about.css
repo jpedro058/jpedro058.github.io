@@ -1,398 +1,274 @@
-
-.about{
-    padding-top: 1rem;
-    display : flex;
-    justify-content : center;
-    flex: 100%;
-    width: 100%;
-    height : 100vh;
-    background-color :#0A0A0A;
-    color : #eee;
-    transition: 0.5s ease-out;
+.about {
+  display: flex;
+  justify-content: center;
+  flex: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #0a0a0a;
+  color: #eee;
+  transition: 0.5s ease-out;
 }
 
-.about .content{
-    display : flex;
+.about .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 60%;
+  width: 60%;
+  color: #eee;
+}
+
+.about .text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 10%;
+  width: 70%;
+  height: fit-content;
+  padding: 2rem;
+}
+
+.text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about .text span {
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  flex: 0 50%;
+  min-height: 50vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #15292b;
+  border-radius: 15px;
+  transition: 0.5s ease-out;
+}
+
+.info .info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 0 50%;
+  width: 50%;
+  padding-right: 5%;
+}
+
+.info .info-item p {
+  margin-bottom: 1.5rem;
+}
+
+img {
+  width: 5rem;
+  padding-bottom: 1.5rem;
+}
+
+.info .info-item span {
+  font-weight: 700;
+  margin-right: 0.2rem;
+}
+
+.info .skills {
+  display: flex;
+  flex-direction: column;
+  flex: 0 50%;
+  width: 50%;
+  padding-left: 5%;
+}
+
+.info .skills h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.info .skills .skills-item {
+  display: flex;
+  flex-direction: column;
+  padding-block: 0.5rem;
+}
+
+.info .skills .skills-item span {
+  padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 1075px) {
+  .about {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    flex:0 60%;
-    width: 60%;
-    color : #eee;
-}
-
-.about .text{
-    display : flex;
-    flex-direction : column;
-    text-align: center;
-    flex:0 10%;
-    width: 70%;
-    height: fit-content;
-    padding : 2rem;
-}
-
-.text h2{
-    font-size : 3rem;
-    font-weight : 700;
-    margin-bottom : 0.5rem;
-}
-
-.about .text span{
-    font-weight : 700;
-}
-
-.info{
-    display : flex;
-    flex:0 50%;
-    min-height: 50vh;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    flex-direction : row;
-    background-color: #15292B;  
-    border-radius: 15px;
-    transition: 0.5s ease-out;
+    flex: 100%;
+    width: 100%;
+    height: 130vh;
+    background-color: #0a0a0a;
+    color: #eee;
+  }
+
+  .about .text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 50% !important;
+    width: 100%;
+    min-height: 80vh;
+  }
+
+  .info .info-item {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 50% !important;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .info img {
+    width: 5rem !important;
+    padding-top: 1rem;
+  }
+
+  .info .skills {
+    display: flex;
+    align-items: center;
+    flex: 0 30% !important;
+    width: 50% !important;
+    padding: 0 !important;
+    max-height: 10vh !important;
+  }
+
+  .skills h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .info .skills .skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 
-.info .info-item{
-    display : flex;
-    flex-direction : column;
-    align-items: flex-end;
-    flex:0 50%;
-    width: 50%;
-    padding-right: 5%;
+@media only screen and (max-width: 800px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+    width: 100%;
+    height: 120vh;
+    background-color: #0a0a0a;
+    color: #eee;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex: 0 100%;
+    width: 100%;
+    min-height: 80vh !important;
+  }
+
+  .info .info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 100% !important;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-top: 1rem !important;
+  }
 }
 
-.info .info-item p{
-    margin-bottom : 1.5rem;
+@media only screen and (max-width: 600px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+    width: 100%;
+    height: 130vh !important;
+    background-color: #0a0a0a;
+    color: #eee;
+  }
+
+  .about .text {
+    display: flex;
+    flex-direction: column;
+    flex: 0 100%;
+    width: 100% !important;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 100%;
+    width: 80% !important;
+    color: #eee;
+  }
 }
 
-img{
-    width: 5rem;
-    padding-bottom: 1.5rem;
+@media only screen and (max-width: 500px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+    width: 100%;
+    height: 140vh !important;
+    background-color: #0a0a0a;
+    color: #eee;
+  }
+
+  .skills {
+    margin-top: 5rem !important;
+  }
 }
 
-.info .info-item span{
-    font-weight: 700;
-    margin-right: 0.2rem;
-}
+@media only screen and (max-width: 375px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+    width: 100%;
+    height: 180vh !important;
+    background-color: #0a0a0a;
+    color: #eee;
+  }
 
-.info .skills{
-    display : flex;
-    flex-direction : column;
-    flex:0 50%;
-    width: 50%;
-    padding-left: 5%;
-}
+  .about .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 100%;
+    width: 100% !important;
+  }
 
-.info .skills h3{
-    font-size : 2rem;
-    margin-bottom : 0.5rem;
-}
-
-.info .skills .skills-item{
-    display : flex;
-    flex-direction : column;
-    padding-block: 0.5rem;
-}
-
-.info .skills .skills-item span{
-    padding-bottom: 0.5rem;
-}
-
-@media only screen and (max-width: 1075px){
-    .about{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 100%;
-        width: 100%;
-        height: 130vh;
-        background-color: #0A0A0A;
-        color: #eee;
-    }
-
-    .about .text{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .info{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        flex: 0 50% !important;
-        width: 100%;
-        min-height: 80vh;
-    }
-
-    .info .info-item{
-        position: absolute;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 0 50% !important;
-        width: 100%;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    .info img{
-        width: 5rem !important;
-        padding-top: 1rem;
-    }
-    
-    .info .skills{
-        display: flex;
-        align-items: center;
-        flex:0 30% !important;
-        width: 50% !important;
-        padding: 0 !important;
-        max-height: 10vh !important;
-    }
-
-    .skills h3{
-        font-size: 1.5rem !important;
-    }
-
-    .info .skills .skills-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    .about{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 100%;
-        width: 100%;
-        height: 140vh;
-        background-color: #0A0A0A;
-        color: #eee;
-    }
-
-    .about .text{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .info{
-        display: flex;
-        flex-direction: column;
-        flex:0 80%;
-        width: 100%;
-        min-height: 80vh !important;
-    }
-
-    .info .info-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0 !important;
-        margin: 0 !important;
-        padding-top: 1rem !important;
-    }
-
-    .info img{
-        width: 5rem !important;
-        padding-top: 1rem;
-    }
-    
-    .info .skills{
-        display: flex;
-        align-items: center;
-        flex:0 100% !important;
-        width: 100% !important; 
-        padding-top: 1rem !important;
-    }
-
-    .info .skills .skills-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-}
-
-
-@media only screen and (max-width: 600px){
-
-    .about{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 100%;
-        width: 100%;
-        height: 130vh !important;
-        background-color: #0A0A0A;
-        color: #eee;
-    }
-
-    .about .text{
-        display: flex;
-        flex-direction: column;
-        flex: 0 100%;
-        width: 100% !important;
-    }
-    .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 0 100%;
-        width: 80% !important;
-        color: #eee;
-    }
-
-    .info{
-        display: flex;
-        flex-direction: column;
-        flex:0 80%;
-        min-width: 100%;
-        min-height: 80vh;
-        padding: 0;
-    }
-
-    .info .info-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 0 10%;
-        width: 100%;
-        padding: 0 !important;
-        margin: 0 !important;
-        padding-top: 1rem !important;
-    }
-
-    .info img{
-        padding-top: 0.5rem;
-        width: 5rem !important;
-    }
-    
-    .info .skills{
-        display: flex;
-        align-items: center;
-        flex:0 100% !important;
-        width: 100% !important; 
-        padding-top: 1rem !important;
-    }
-
-    .info .skills .skills-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-}
-
-
-@media only screen and (max-width: 500px){
-
-    .about{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 100%;
-        width: 100%;
-        height: 140vh !important;
-        background-color: #0A0A0A;
-        color: #eee;
-    }
-
-    .about .text{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        flex: 0 100%;
-        width: 100% !important;
-    }
-
-    .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 0 100%;
-        width: 80% !important;
-        color: #eee;
-    }
-
-    .info{
-        display: flex;
-        flex-direction: column;
-        flex:0 100%;
-        min-width: 100%;
-        min-height: 80vh !important;
-    }
-
-    .info .info-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 0 10%;
-        width: 100%;
-        padding: 0 !important;
-        margin: 0 !important;
-        padding-top: 1rem !important;
-    }
-
-    .info img{
-        width: 4rem !important;
-    }
-    
-    .info .skills{
-        display: flex;
-        align-items: center;
-        flex:0 100% !important;
-        width: 100% !important; 
-        padding-top: 1rem !important;
-    }
-
-    .info .skills .skills-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-}
-
-@media only screen and (max-width: 375px){
-    .about{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex: 100%;
-        width: 100%;
-        height: 180vh !important;
-        background-color: #0A0A0A;
-        color: #eee;
-    }
-
-    .about .text{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        flex: 0 100%;
-        width: 100% !important;
-    }
-
-    .info{
-        display: flex;
-        flex-direction: column;
-        flex:0 100%;
-        min-width: 100%;
-        min-height: 100vh !important;
-    }
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex: 0 100%;
+    min-width: 100%;
+    min-height: 100vh !important;
+  }
 }

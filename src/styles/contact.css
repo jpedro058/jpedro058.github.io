@@ -1,459 +1,307 @@
-
-.Contact{
-    position: relative;
-    display: flex;
-    flex:100%;
-    width: 100%;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-    flex-direction : row;
-    background-color: #0A0A0A;
-    border-top: 1px solid rgb(112, 112, 112);
-    color: white;
-    transition: 0.5s ease-out;
+.Contact {
+  position: relative;
+  display: flex;
+  flex: 100%;
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #0a0a0a;
+  border-top: 1px solid rgb(112, 112, 112);
+  color: white;
+  transition: 0.5s ease-out;
 }
 
-.Contact .contact-container-left{
+.Contact .contact-container-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 50%;
+  width: 50%;
+  height: 50vh;
+  padding: 1rem;
+}
+
+.contact-container-left .content {
+  position: absolute;
+  top: 6.2rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1rem;
+  width: 100%;
+  height: fit-content;
+  background-color: transparent;
+}
+
+.social img {
+  width: 2rem;
+  transition: 0.2s ease-out;
+  padding: 0rem;
+  background-color: transparent;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.Content h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.contact-container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 50%;
+  height: 50vh;
+  padding: 1rem;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 100%;
+  width: 100%;
+}
+
+.inputs-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.inputs-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-container-right h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.Name {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 1rem;
+}
+
+.Email {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 1rem;
+}
+
+.Message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+
+input {
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  height: 2rem;
+  font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  width: 100%;
+  height: 1.5rem;
+  resize: none;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+}
+
+.butto {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: transparent;
+
+  border: 2px solid white;
+  color: white;
+  width: 6rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+  border-radius: 5px;
+  position: relative;
+}
+
+.butto:hover {
+  background-color: #063c4e;
+}
+
+.butto .btn-icon {
+  position: relative;
+  z-index: 10;
+}
+
+.butto.active .btn-icon {
+  animation: animated-rocket 2s ease-in-out forwards;
+  color: ##0a0a0a;
+}
+
+.butto::before {
+  content: "Submitted";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #063c4e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  transition-delay: 1s;
+  border-radius: 5px;
+  z-index: 20;
+}
+
+.butto.active::before {
+  width: 100%;
+}
+
+@keyframes animated-rocket {
+  0%,
+  5% {
+    transform: rotate(0);
+    left: 0;
+  }
+
+  25% {
+    transform: rotate(45deg);
+    left: 0;
+  }
+
+  50% {
+    transform: rotate(45deg);
+    left: -17px;
+  }
+
+  100% {
+    transform: rotate(45deg);
+    left: calc(58% + 10px);
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .Contact {
     position: relative;
+    flex-direction: column;
+    height: 80vh !important;
+  }
+
+  .Contact .contact-container-left {
+    position: absolute;
+    top: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    padding-left: 2rem;
+  }
+
+  .contact-container-right {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0 50%;
-    width: 50%;
-    height: 50vh;
+    justify-content: center;
+    flex: 0 70%;
+    width: 70%;
     padding: 1rem;
-}
+    color: white;
+  }
 
-.contact-container-left .content{   
+  .social {
     position: absolute;
-    top: 6.2rem;
-}
+    bottom: 2rem;
+    right: 2rem;
+  }
 
-.social{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 1rem;
-    width: 100%;
-    height: fit-content;
-    background-color: transparent;
-}
-
-.social img{
-    width: 2rem;
+  .social img {
+    width: 2rem !important;
     transition: 0.2s ease-out;
     padding: 0rem;
     background-color: transparent;
+  }
 }
 
-img:hover{
-    transform: scale(1.1);
-
-}
-
-.Content h2{
-    margin-bottom: 1rem;
-    font-size: 3rem;
-}
-
-.contact-container-right{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 0 50%;
-    height: 50vh;
-    padding: 1rem;
-    color: white;
-}
-
-
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 0 100%;
-    width: 100%;
-}
-
-.inputs-top{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   width: 100%;
-}
-.inputs-bottom{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   width: 100%;
-}
-
-.contact-container-right h4{
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-}
-
-.Name{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 1rem;
-}
-
-.Email{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 1rem;
-}
-
-.Message{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 1rem;
-}
-
-input{
-    color: white;
-    border: none;
-    border-bottom: 2px solid white;
-    background-color: transparent;
-    height: 2rem;
-    font-size: 0.8rem;
-}
-
-input:focus, textarea:focus {
-    outline: none;
-}
-
-textarea{
-    color: white;
-    border: none;
-    border-bottom: 2px solid white;
-    background-color: transparent;
-    width: 100%;
-    height: 1.5rem;
-    resize: none;
-}
-
-.botao{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1rem;
-    color: white;
-}
-
-.butto{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: transparent;
-
-    border: 2px solid white;
-    color: white;
-    width: 6rem;
-    height: 2.5rem;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    font-weight: 700;
-
-    transition: 0.3s ease;
-    border-radius: 5px; 
+@media only screen and (max-width: 600px) {
+  .Contact {
     position: relative;
-}
+    flex-direction: column;
+    height: 90vh !important;
+  }
 
-.butto:hover{
-    background-color: #063c4e;
-}
-
-.butto .btn-icon{
-    position: relative;
-    z-index: 10;
-}
-
-.butto.active .btn-icon{
-    animation: animated-rocket 2s ease-in-out forwards;
-    color: ##0A0A0A;
-}
-
-.butto::before{
-    content: "Submitted";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #063c4e;
+  .inputs-top {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;  
-    transition: 1s ease-in-out;
-    transition-delay: 1s;
-    border-radius: 5px;
-    z-index: 20;
-}
-
-.butto.active::before{
     width: 100%;
+  }
+
+  .Name {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .Email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
-
-@keyframes animated-rocket{
-    0%, 5%{
-        transform: rotate(0);
-        left: 0;
-    }
-
-    25%{
-        transform: rotate(45deg);
-        left: 0;
-    }
-
-    50%{
-        transform: rotate(45deg);
-        left: -17px;
-    }
-
-    100%{
-        transform: rotate(45deg);
-        left: calc(58% + 10px);
-    }
-}
-
-
-@media only screen and (max-width: 1075px){
-    .Contact{
-        position: relative;
-        flex-direction: column;
-        height: 80vh !important;
-    }
-
-    .Contact .contact-container-left{
-        position: absolute;
-        top: 0rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 70%;
-        padding-left: 2rem;
-        
-    }
-
-    .contact-container-right{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex: 0 70%;
-        width: 70%;
-        padding: 1rem;
-        color: white;
-    }
-
-    .social{
-        position: absolute;
-        bottom: 2rem;
-        right: 2rem;
-    }
-
-    .social img{
-        width: 2rem !important;
-        transition: 0.2s ease-out;
-        padding: 0rem;
-        background-color: transparent;
-    }
-    
-}
-
-
-@media only screen and (max-width: 600px){
-    .Contact{
-        position: relative;
-        flex-direction: column;
-        height: 90vh !important;
-    }
-
-    .Contact .contact-container-left{
-        position: absolute;
-        top: 0rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 70%;
-        padding-left: 2rem;
-        
-    }
-
-    .inputs-top{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .social{
-        position: absolute;
-        bottom: 2rem;
-        right: 2rem;
-    }
-
-    .social img{
-        width: 2rem !important;
-        transition: 0.2s ease-out;
-        padding: 0rem;
-        background-color: transparent;
-    }
-
-    .Name{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-    }
-    
-    .Email{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-    }
-
-    form h4{
-        font-size: 2rem !important;
-    }
-
-    button{
-        background-color: transparent;
-        border: 2px solid white;
-        color: white;
-        width: 7rem;
-        height: 3rem;
-        margin-top: 1rem;
-        font-size: 1rem;
-        font-weight: 700;
-        transition: 0.3s ease-out;
-    }
-    
-    .Message{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-    }
-   
-}
-
-@media only screen and (max-width: 500px){
-    .Contact{
-        position: relative;
-        flex-direction: column;
-        height: 100vh !important;
-    }
-
-    .Contact .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex: 0 100%;
-        width: 100%;
-        color: white;
-    }
-
-    .Content h2{
-        font-size: 2.5rem;
-    }
-
-    .Contact p{
-        font-size: 1rem;
-    }
-
-    .Contact .contact-container-left{
-        position: absolute;
-        top: 0rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 70%;
-        padding-left: 2rem;
-        
-    }
-
-    .inputs-top{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .social{
-        position: absolute;
-        bottom: 2rem;
-        right: 2rem;
-    }
-
-    .social img{
-        width: 2rem !important;
-        transition: 0.2s ease-out;
-        padding: 0rem;
-        background-color: transparent;
-    }
-
-    .Name{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-    }
-    
-    .Email{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-    }
-
-    form h4{
-        font-size: 1.5rem !important;
-    }
-
-    button{
-        background-color: transparent;
-        border: 2px solid white;
-        color: white;
-        width: 7rem;
-        height: 3rem;
-        margin-top: 1rem;
-        font-size: 1rem;
-        font-weight: 700;
-        transition: 0.3s ease-out;
-    }
-    
-    .Message{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-    }
-   
-}
-
-@media only screen and (max-width: 375px){
-
-    .Contact{
-        position: relative;
-        flex-direction: column;
-        height: 120vh !important;
-    }
-
-
+@media only screen and (max-width: 375px) {
+  .Contact {
+    position: relative;
+    flex-direction: column;
+    height: 120vh !important;
+  }
 }

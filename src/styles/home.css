@@ -1,127 +1,110 @@
 .home-page {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .home-page::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/wallhaven-0pqm3p.png);
-    filter: brightness(0.4);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/wallhaven-0pqm3p.png);
+  filter: brightness(0.4);
+  z-index: -1;
 }
-  
+
 .inside-page {
-    /* This will make it stack on top of the ::before */
-    position: relative;
-    color: white;
+  /* This will make it stack on top of the ::before */
+  position: relative;
+  color: white;
 
-    width: 100%;
-    height: 91vh;
-    display: flex;
-    flex: 100%;
-    flex-wrap: wrap;
-    flex-direction: row;
+  width: 100%;
+  height: 91vh;
+  display: flex;
+  flex: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.home-page-title{
-    display: flex;
+.home-page-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+  width: 50%;
+}
+
+.home-page-title-text {
+  display: flex;
+  flex: 0 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  min-width: 40%;
+  margin-top: 15rem;
+}
+
+.home-page-title-text h3 {
+  transition: 0.5s ease-out;
+}
+
+.home-page-title-text h3:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  text-shadow: 10px 10px 10px rgb(89, 68, 68);
+}
+
+.home-page-title-text h3 {
+  position: absolute;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.home-page-title-text .typewriter {
+  position: absolute;
+  font-family: pacifico;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.home-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+  width: 50%;
+}
+
+.home-page-content img {
+  display: flex;
+  width: 20rem;
+  transition: 0.2s ease-out;
+}
+
+@media only screen and (max-width: 1075px) {
+  .inside-page {
     flex-direction: column;
+  }
+
+  .home-page-content {
+    align-items: flex-end !important;
     justify-content: center;
-    align-items: center;
-    flex: 50%;
-    width: 50%;
+  }
+  img {
+    width: 15rem !important;
+  }
 }
 
-.home-page-title-text{
-    display: flex;
-    flex: 0 10%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    min-width: 40%;
-    margin-top: 15rem;
-   
-}
-
-.home-page-title-text h3{
-    transition: 0.5s ease-out;
-}
-
-.home-page-title-text h3:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    text-shadow: 10px 10px 10px rgb(89, 68, 68);
-}
-
-.home-page-title-text h3{
-    position: absolute;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-}
-
-.home-page-title-text .typewriter{
-    position: absolute;
-    font-family: pacifico;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
-
-.home-page-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 50%;
-    width: 50%;
-}
-
-.home-page-content img{
-    display: flex;
-    width: 20rem;
-    transition: 0.2s ease-out;
-}
-
-@media only screen and (max-width: 1075px){
-    .inside-page{
-        flex-direction: column;
-    }
-
-    .home-page-content{
-        align-items: flex-end !important;
-        justify-content: center;
-    }
-    img{
-        width: 15rem !important;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .home-page-title-text h3{
-        font-size: 2.5rem;
-    }
-    .home-page-title-text .typewriter{
-        font-size: 1rem;
-    }
-    .home-page-content img{
-        width: 10rem !important;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .home-page-title-text h3{
-        font-size: 2rem;
-    }
-    .home-page-title-text .typewriter{
-        font-size: 0.8rem;
-    }
-    .home-page-content img{
-        width: 8rem !important;
-    }
+@media only screen and (max-width: 600px) {
+  .home-page-content img {
+    width: 10rem !important;
+  }
 }

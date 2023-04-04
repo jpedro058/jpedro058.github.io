@@ -5,6 +5,7 @@ import image from "../img/img.svg";
 import About from "../pages/About";
 import Contact from "./Contact";
 import "../styles/global.css";
+import { Portfolio } from "./Portfolio";
 
 /* import Typewriter from "typewriter-effect"; */
 
@@ -23,6 +24,7 @@ const Home = () => (
       </div>
     </div>
     <About />
+    <Portfolio />
     <Contact />
   </div>
 );

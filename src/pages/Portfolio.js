@@ -12,7 +12,7 @@ export function Portfolio() {
       image: weatherApp,
       title: "Weather App",
       description:
-        "A weather app using the OpenWeather API and made with React. Because now the one call API is paid i can't show the forecast for the next 7 days as i had planned to do. But you can still see the current weather and a lot of other information about the city you search for.",
+        "A weather app using the OpenWeather API and made with React. Because now the one call API is paid i can't show the forecast for the next 7 days as i had planned to do. But you can still see the current weather and a lot of other informations about the city you search for.",
       link: "https://jpedro058.github.io/Weather-App/",
     },
     {
@@ -20,7 +20,7 @@ export function Portfolio() {
       image: findMyMovie,
       title: "Find My Movie",
       description:
-        "A movie search app using the OMDB API and made with React. In this website you can search for a movie and see a lot of sthe details about it. Unfortunately we can't see the movie it self but who knows maybe in the future.",
+        "A movie search app using the OMDB API and made with React. In this website you can search for a movie and see a lot of the details about it. Unfortunately we can't see the movie it self but who knows... maybe in the future.",
       link: "https://jpedro058.github.io/FindMyMovie/",
     },
   ];
@@ -46,7 +46,7 @@ export function Portfolio() {
             <div className="portfolio-item-front">
               <div className="portfolio-item-image">
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <img src={item.image} />
+                  <img src={item.image} alt={item.title} />
                 </a>
               </div>
               <div className="portfolio-item-bottom">

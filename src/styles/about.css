@@ -271,4 +271,9 @@ img {
     min-width: 100%;
     min-height: 100vh !important;
   }
+
+  .skills {
+    flex: 0 100%;
+    min-width: 100%;
+  }
 }

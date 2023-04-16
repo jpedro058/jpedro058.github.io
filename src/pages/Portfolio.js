@@ -35,7 +35,7 @@ export function Portfolio() {
   };
 
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="PORFOLIO">
       <h1>Portfolio</h1>
       <div className="portfolio-row">
         {portfolioItems.map((item) => (
@@ -55,7 +55,7 @@ export function Portfolio() {
                   className="portfolio-item-open-btn"
                   onClick={() => handleClick(item.id)}
                 >
-                  More Info
+                  Info
                 </button>
               </div>
             </div>

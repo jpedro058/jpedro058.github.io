@@ -33,6 +33,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link to="#PORFOLIO" className="link3" onClick={toggleNav}>
+                Portfolio
+              </Link>
+            </li>
+            <li>
               <Link to="#contact" className="link3" onClick={toggleNav}>
                 Contact
               </Link>

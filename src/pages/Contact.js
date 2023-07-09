@@ -66,7 +66,6 @@ const Contact = () => {
                 type="text"
                 className="input-name"
                 placeholder="xxx@gmail.com"
-                required
               />
             </div>
             <div className="Email">
@@ -76,7 +75,6 @@ const Contact = () => {
                 name="user_email"
                 placeholder="xxx@gmail.com"
                 className="input-email"
-                required
               />
             </div>
           </div>
@@ -84,19 +82,14 @@ const Contact = () => {
           <div className="inputs-bottom">
             <div className="Message">
               <h4>Message</h4>
-              <textarea
-                type="text"
-                name="message"
-                placeholder="Hey..."
-                required
-              />
+              <textarea type="text" name="message" placeholder="Hey..." />
             </div>
           </div>
           <div className="botao">
             <button
               type="submit"
-              className={`butto ${isActive ? "active" : ""}`}
               onClick={handleClick}
+              className={`butto ${isActive ? "active" : ""}`}
             >
               <span className="btn-icon">
                 <FontAwesomeIcon icon={faRocket} />

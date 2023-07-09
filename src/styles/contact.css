@@ -178,12 +178,12 @@ textarea {
   background-color: #063c4e;
 }
 
-.butto .btn-icon {
+.button .btn-icon {
   position: relative;
   z-index: 10;
 }
 
-.butto.active .btn-icon {
+.button.active .btn-icon {
   animation: animated-rocket 2s ease-in-out forwards;
   color: ##0a0a0a;
 }
@@ -203,10 +203,10 @@ textarea {
   transition: 1s ease-in-out;
   transition-delay: 1s;
   border-radius: 5px;
-  z-index: 20;
+  z-index: 20000;
 }
 
-.butto.active::before {
+.button.active::before {
   width: 100%;
 }
 

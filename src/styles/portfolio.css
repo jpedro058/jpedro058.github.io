@@ -197,11 +197,16 @@
 
 @media screen and (max-width: 820px) {
   .portfolio h1 {
-    left: 37%;
+    left: 25%;
   }
 
   .portfolio-item {
     margin: 0 auto;
     margin-block: 1rem;
+  }
+
+  .portfolio-row {
+    margin-left: 1rem;
+    gap: 1rem;
   }
 }

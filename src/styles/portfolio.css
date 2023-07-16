@@ -6,6 +6,7 @@
   border-top: 1px solid rgb(112, 112, 112);
   max-width: 100%;
   justify-content: center;
+  overflow: hidden;
 }
 
 .portfolio h1 {
@@ -17,16 +18,21 @@
   width: fit-content;
 }
 
-.portfolio-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.portfolio-row::-webkit-scrollbar {
+  display: none !important;
+}
 
-  column-gap: 4rem;
-  padding: 2rem;
-  color: white;
-  max-width: 100%;
-  overflow-y: hidden;
+.portfolio-row {
+  display: flex !important;
+
+  scroll-behavior: smooth !important;
+  overflow-x: scroll !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll !important;
+
+  overflow-y: hidden !important;
 }
 
 .portfolio-item {

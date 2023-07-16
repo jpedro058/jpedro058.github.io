@@ -4,6 +4,7 @@ import { useState } from "react";
 import "../styles/portfolio.css";
 import weatherApp from "../img/weather.png";
 import findMyMovie from "../img/findmymovie.png";
+import gymApp from "../img/gym.png";
 
 export function Portfolio() {
   const portfolioItems = [
@@ -22,6 +23,14 @@ export function Portfolio() {
       description:
         "A movie search app using the OMDB API and made with React. In this website you can search for a movie and see a lot of the details about it. Unfortunately we can't see the movie it self but who knows... maybe in the future.",
       link: "https://jpedro058.github.io/FindMyMovie/",
+    },
+    {
+      id: 3,
+      image: gymApp,
+      title: "Gym App",
+      description:
+        "A gym app made with React. In this website you can see an exemple of a gym website, where you can find motivation to start working out, see some types trainings and some other things.",
+      link: "https://gym-jpedro058.vercel.app",
     },
   ];
 

@@ -7,6 +7,7 @@
   max-width: 100%;
   justify-content: center;
   overflow: hidden;
+  scroll-snap-type: x mandatory;
 }
 
 .portfolio h1 {
@@ -208,5 +209,6 @@
   .portfolio-row {
     margin-left: 1rem;
     gap: 1rem;
+    scroll-snap-align: start;
   }
 }

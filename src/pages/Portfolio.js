@@ -5,6 +5,7 @@ import "../styles/portfolio.css";
 import weatherApp from "../img/weather.png";
 import findMyMovie from "../img/findmymovie.png";
 import gymApp from "../img/gym.png";
+import musicology from "../img/musicology.png";
 
 export function Portfolio() {
   const portfolioItems = [
@@ -31,6 +32,14 @@ export function Portfolio() {
       description:
         "A gym app made with React. In this website you can see an exemple of a gym website, where you can find motivation to start working out, see some types trainings and some other things.",
       link: "https://gym-jpedro058.vercel.app",
+    },
+    {
+      id: 4,
+      image: musicology,
+      title: "Musicology",
+      description:
+        "A music app made with React. In this website you can see an exemple of a music website, where you have some info about the prices, some statistics and a dance tour.",
+      link: "https://musicology-tau.vercel.app",
     },
   ];
 

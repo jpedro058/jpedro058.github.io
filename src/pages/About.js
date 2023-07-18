@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/about.css";
 import ProgressBar from "../components/progressBar";
-import image from "../img/img.svg";
+import image from "../img/svg/img.svg";
 
 const About = () => {
   return (

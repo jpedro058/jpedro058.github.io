@@ -1,7 +1,7 @@
 import "../styles/home.css";
 import Navbar from "../components/navbar";
 import TypewritingAnimation from "../components/type.js";
-import image from "../img/img.svg";
+import image from "../img/svg/img.svg";
 import About from "../pages/About";
 import Contact from "./Contact";
 import "../styles/global.css";

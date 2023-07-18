@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import "../styles/contact.css";
-import insta from "../img/insta.svg";
-import twitter from "../img/twitter.svg";
-import email from "../img/email.svg";
+import insta from "../img/svg/insta.svg";
+import twitter from "../img/svg/twitter.svg";
+import email from "../img/svg/email.svg";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";

@@ -42,19 +42,19 @@ const About = () => {
             <h3>Skills</h3>
             <div className="skills-item">
               <span>HTML</span>
-              <ProgressBar className="progress" progress={90} />
+              <ProgressBar className="progress" progress={100} />
             </div>
             <div className="skills-item">
               <span>CSS</span>
-              <ProgressBar className="progress" progress={70} />
+              <ProgressBar className="progress" progress={75} />
             </div>
             <div className="skills-item">
               <span>JS</span>
-              <ProgressBar className="progress" progress={50} />
+              <ProgressBar className="progress" progress={70} />
             </div>
             <div className="skills-item">
               <span>React</span>
-              <ProgressBar className="progress" progress={50} />
+              <ProgressBar className="progress" progress={75} />
             </div>
           </div>
         </div>

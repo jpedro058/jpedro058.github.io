@@ -64,7 +64,8 @@ a:hover {
 
 .link1::after,
 .link2::before,
-.link3::before {
+.link3::before,
+.link4::before {
   content: "";
   position: absolute;
   width: 3.5rem;
@@ -92,20 +93,34 @@ a:hover {
 
 .link3::before {
   position: absolute;
-  width: 4.2rem;
+  width: 5rem;
   height: 2px;
   top: 2rem;
-  left: 15rem;
+  left: 14.65rem;
   background-color: rgb(138, 138, 138);
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
+
+.link4::before {
+  position: absolute !important;
+  width: 4.5rem !important;
+  height: 2px;
+  top: 2rem !important;
+  left: 23.6rem !important;
+  background-color: rgb(138, 138, 138);
+  visibility: hidden !important;
+  transform: scaleX(0) !important;
+  transition: all 0.3s ease-in-out 0s;
+}
+
 .link1:hover::after,
 .link2:hover::before,
-.link3:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
+.link3:hover::before,
+.link4:hover::before {
+  visibility: visible !important;
+  transform: scaleX(1) !important;
 }
 
 header .nav-btn {

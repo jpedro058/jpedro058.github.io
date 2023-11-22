@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <header>
       <h3>
-        My <span>Portfolio</span>
+        <span>jpedro058</span>
       </h3>
 
       <nav ref={navRef}>
@@ -38,7 +38,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="#contact" className="link3" onClick={toggleNav}>
+              <Link to="#contact" className="link4" onClick={toggleNav}>
                 Contact
               </Link>
             </li>

@@ -6,11 +6,20 @@ import weatherApp from "../img/weather.png";
 import findMyMovie from "../img/findmymovie.png";
 import gymApp from "../img/gym.png";
 import musicology from "../img/musicology.png";
+import filmLand from "../img/filmLand2.png";
 
 export function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
+      image: filmLand,
+      title: "Filmland",
+      description:
+        "In this project i tried to recreate the UI of the filmland spirits website to improve my skills in React and CSS. ",
+      link: "https://filmland.jpedro058.me",
+    },
+    {
+      id: 2,
       image: weatherApp,
       title: "Weather App",
       description:
@@ -18,7 +27,7 @@ export function Portfolio() {
       link: "https://jpedro058.github.io/Weather-App/",
     },
     {
-      id: 2,
+      id: 3,
       image: findMyMovie,
       title: "Find My Movie",
       description:
@@ -26,7 +35,7 @@ export function Portfolio() {
       link: "https://jpedro058.github.io/FindMyMovie/",
     },
     {
-      id: 3,
+      id: 4,
       image: gymApp,
       title: "Gym App",
       description:
@@ -34,7 +43,7 @@ export function Portfolio() {
       link: "https://gym-jpedro058.vercel.app",
     },
     {
-      id: 4,
+      id: 5,
       image: musicology,
       title: "Musicology",
       description:
@@ -103,14 +112,3 @@ export function Portfolio() {
     </div>
   );
 }
-
-/* <div key={item.id} className="portfolio-item">
-            <img src={item.image} />
-            <div className="portfolio-item-content">
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                View Project
-              </a>
-            </div>
-          </div> */

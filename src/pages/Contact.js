@@ -106,7 +106,7 @@ const Contact = () => {
           <a href="https://twitter.com/joaolaranjas">
             <img src={twitter} alt="twitter" />
           </a>
-          <a href="mailto:contact@jplaranjeiro.dev">
+          <a href="mailto:contactt@jplaranjeiro.dev">
             <img src={email} alt="email" />
           </a>
         </div>
